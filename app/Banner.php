@@ -11,4 +11,6 @@ class Banner extends Model
     public function gallery(){
         return $this->belongsTo(Gallery::class);
     }
+
+
 }
