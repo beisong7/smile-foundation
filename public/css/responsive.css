@@ -1,0 +1,8 @@
+
+
+@media screen and (max-width: 750px) {
+    .heading-padding {
+        padding-bottom:125px;
+        padding-top: 125px;
+    }
+}

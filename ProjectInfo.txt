@@ -1,0 +1,10 @@
+this project folder contains the following
+- laravel excel plugin 2.1
+- laravel file manager 1.8
+- laravel passport 
+
+	#for passport:
+		ensure to run (php artisan passport:install) after you run any migration e.g:php artisan migrate	
+	#configuring passport
+		visit https://medium.com/modulr/create-api-authentication-with-passport-of-laravel-5-6-1dc2d400a7f to configure
+		or visit https://tutsforweb.com/laravel-passport-create-rest-api-with-authentication/ to configure

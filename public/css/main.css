@@ -1,0 +1,15 @@
+.bg-norepeat{
+    /*background: no-repeat;*/
+}
+
+#fadeandscale{
+    background: #333 !important;
+}
+
+a{
+    color: #ec1e8d;
+}
+
+.footer-section a:hover{
+    color: #fff;
+}
