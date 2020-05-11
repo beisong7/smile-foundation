@@ -1,7 +1,7 @@
 <section class="slider-area">
     <div class="homepage-slide1">
         @foreach($banners as $ban)
-            <div class="single-slide-item" style=" max-height: 500px; background-image: url('{{ 'http://localhost:8002/uploads/'.$ban->gallery->url }}')">
+            <div class="single-slide-item" style=" max-height: 500px; background-image: url('{{ 'https://smileplanetef.org/uploads/'.$ban->gallery->url }}')">
                 <div class="slide-item-table">
                     <div class="slide-item-tablecell">
                         <div class="container">
