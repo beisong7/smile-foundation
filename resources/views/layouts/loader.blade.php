@@ -1,5 +1,1 @@
-<div id="loading-area">
-    <div class="loader-box">
-        <div class="loader" id="loader-1"></div>
-    </div>
-</div><!-- end loading -->
+<div class="preloader" style="background-image: url('{{ url('images/spef_1.png') }}');"></div>

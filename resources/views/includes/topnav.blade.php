@@ -1,91 +1,219 @@
-<header class="header-area">
-    <div class="header-top-action">
+<header class="main-header header-style-one">
+    <section class="header-top">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="top-action-content">
-                        <div class="info-box info-box-1 d-flex align-items-center">
-                            <ul class="d-flex align-items-center">
-                                <li><a href="#"><i class="fa fa-envelope"></i>mails@smileplanetef.org</a></li>
-                                <li><a href="#"><i class="fa fa-phone-square"></i>+234 703 346 1426</a></li>
-                            </ul>
-                        </div><!-- end info-box -->
-                    </div><!-- top-action-content -->
-                </div><!-- end col-lg-6 -->
-                <div class="col-lg-7">
-                    <div class="top-action-content info-action-content">
-                        <div class="info-box info-box-2 d-flex align-items-center justify-content-end">
-                            <ul class="top-action-list d-flex align-items-center">
-                                {{--<li class="action__text"><a href="#">login</a></li>--}}
-                                {{--<li class="action__text"><a href="#">register</a></li>--}}
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
-                        </div><!-- end info-box box-2 -->
-                    </div><!-- top-action-content -->
-                </div><!-- end col-lg-6 -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end header-top-action -->
-    <div class="header-top header-menu-action">
-        <div class="container">
-            <div class="row ostion-top-wrap">
-                <div class="col-lg-5 col-sm-5 site-branding">
-                    <div class="logo-action d-flex align-items-center">
-                        <div class="ostion-logo">
-                            <a href="{{ route('home') }}">
-                                <img src="{{ url('images/spef_1.png') }}" alt="smile planet" title="Smile Planet" style="width: 70px">
-                            </a>
-                        </div><!-- .ostion-logo -->
-                        <div class="header-btn ml-auto">
-                            <a href="#" class="theme-btn">donate now</a>
-                        </div>
-                    </div><!-- end logo-action -->
-                </div><!-- site-branding -->
-                <div class="col-lg-7 col-sm-7 ostion-menu">
-                    <div class="ostion-menu-innner">
-                        <div class="ostion-menu-content">
-                            <div class="navigation-top">
-                                <nav class="main-navigation">
-                                    <ul>
-                                        <li class="active"><a href="#">Home</a></li>
-                                        <li class="active"><a href="#">Cause</a></li>
-                                        <li class="active"><a href="#">Gallery</a></li>
-                                        <li class="active"><a href="#">Contact</a></li>
-                                    </ul>
-                                </nav><!-- end main-navigation -->
-                            </div><!-- end navigation-top -->
-                        </div><!-- end ostion-menu-content -->
-                        <div class="mobile-menu-toggle">
-                            <i class="fa fa-bars"></i>
-                        </div>
-                    </div><!-- end ostion-menu-innner -->
-                </div><!-- ostion-menu -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end header-top -->
-    <div class="side-nav-container">
-        <div class="humburger-menu">
-            <div class="humburger-menu-lines side-menu-close"></div><!-- end humburger-menu-lines -->
-        </div><!-- end humburger-menu -->
-        <div class="side-menu-wrap">
-            <ul class="side-menu-ul">
-                <li class="sidenav__item"><a href="#">Home</a></li>
-                <li class="sidenav__item"><a href="#">Cause</a></li>
-                <li class="sidenav__item"><a href="#">Gallery</a></li>
-                <li class="sidenav__item"><a href="#">Contact</a></li>
-            </ul>
-            <ul class="side-social">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
-            <div class="side-btn">
-                <a href="#" class="theme-btn">donate now</a>
+            <div class="header">
+                <div class="header-top-left">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="header-top-right">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> {{ _('mails@smileplanetef.org') }}</a></li>
+                        <li><p><i class="fa fa-phone" aria-hidden="true"></i>{{ _('+234 703 346 1426') }}</p></li>
+                    </ul>
+                </div>
             </div>
-        </div><!-- end side-menu-wrap -->
-    </div><!-- end side-nav-container -->
+        </div>
+    </section>
+    <!--/header_top_area-->
+
+    <!--/Header Top-->
+    <section class="mainmenu-area">
+        <div class="container">
+            <div class="logo pull-left" style="padding-top: 10px">
+                <a href="{{ route('home') }}"><img src="{{ url('images/spef_1.png') }}" alt="" style="height: 60px; width: auto"></a>
+            </div>
+            <nav class="main-menu pull-left">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse clearfix">
+                    <ul class="navigation clearfix">
+                        <li class="current dropdown"><a href="index-2.html#">Home</a>
+                            <ul>
+                                <li><a href="index-2.html#">Home One</a></li>
+                                <li><a href="index-3.html#">Home Two</a></li>
+                                <li><a href="index-4.html#">Home Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html#">About</a></li>
+                        <li class="dropdown"><a href="#">Pages</a>
+                            <ul>
+                                <li><a href="gallery.html#">Gallery </a></li>
+                                <li><a href="team.html#">Team</a></li>
+                                <li><a href="404.html#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="blog.html#">Blog</a>
+                            <ul>
+                                <li><a href="blog.html#">Blog</a></li>
+                                <li><a href="single-blog.html#"> Single Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="causes.html#">Causes</a>
+                            <ul>
+                                <li><a href="causes.html#">Causes</a></li>
+                                <li><a href="single-causes.html#"> Single Causes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="event.html#">Event</a>
+                            <ul>
+                                <li><a href="event.html#">Event</a></li>
+                                <li><a href="single-event.html#"> Single Event</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html#">Contact</a></li>
+                    </ul>
+                    <ul class="mobile-menu clearfix">
+
+                        <li class="current dropdown"><a href="index-2.html#">Home</a>
+                            <ul>
+                                <li><a href="index-2.html#">Home One</a></li>
+                                <li><a href="index-3.html#">Home Two</a></li>
+                                <li><a href="index-4.html#">Home Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html#">About</a></li>
+                        <li class="dropdown"><a href="#">Pages</a>
+                            <ul>
+                                <li><a href="gallery.html#">Gallery </a></li>
+                                <li><a href="team.html#">Team</a></li>
+                                <li><a href="404.html#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="blog.html#">Blog</a>
+                            <ul>
+                                <li><a href="blog.html#">Blog</a></li>
+                                <li><a href="single-blog.html#"> Single Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="causes.html#">Causes</a>
+                            <ul>
+                                <li><a href="causes.html#">Causes</a></li>
+                                <li><a href="single-causes.html#"> Single Causes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="event.html#">Event</a>
+                            <ul>
+                                <li><a href="event.html#">Event</a></li>
+                                <li><a href="single-event.html#"> Single Event</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            {{--<div class="signup">--}}
+                {{--<ul><li><a href="#"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>login</a></li>--}}
+                    {{--<li><a href="#"><span></span><i class="fa fa-user" aria-hidden="true"></i>signup</a></li></ul>--}}
+            {{--</div>--}}
+        </div>
+    </section>
+    <!--Main-Mane-->
+    <section class="bounce-in-header">
+        <div class="container">
+            <div class="logo pull-left" style="padding-top: 10px">
+                <a href="index-2.html#"><img src="{{ url('images/spef_1.png') }}" alt="" style="height: 60px; width: auto"></a>
+            </div>
+            <nav class="main-menu pull-left">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse clearfix">
+                    <ul class="navigation clearfix">
+                        <li class="current dropdown"><a href="index-2.html#">Home</a>
+                            <ul>
+                                <li><a href="index-2.html#">Home One</a></li>
+                                <li><a href="index-3.html#">Home Two</a></li>
+                                <li><a href="index-4.html#">Home Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html#">About</a></li>
+                        <li class="dropdown"><a href="#">Pages</a>
+                            <ul>
+                                <li><a href="gallery.html#">Gallery </a></li>
+                                <li><a href="team.html#">Team</a></li>
+                                <li><a href="404.html#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="blog.html#">Blog</a>
+                            <ul>
+                                <li><a href="blog.html#">Blog</a></li>
+                                <li><a href="single-blog.html#"> Single Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="causes.html#">Causes</a>
+                            <ul>
+                                <li><a href="causes.html#">Causes</a></li>
+                                <li><a href="single-causes.html#"> Single Causes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="event.html#">Event</a>
+                            <ul>
+                                <li><a href="event.html#">Event</a></li>
+                                <li><a href="single-event.html#"> Single Event</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html#">Contact</a></li>
+                    </ul>
+                    <ul class="mobile-menu clearfix">
+
+                        <li class="current dropdown"><a href="index-2.html#">Home</a>
+                            <ul>
+                                <li><a href="index-2.html#">Home One</a></li>
+                                <li><a href="index-3.html#">Home Two</a></li>
+                                <li><a href="index-4.html#">Home Three</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html#">About</a></li>
+                        <li class="dropdown"><a href="#">Pages</a>
+                            <ul>
+                                <li><a href="gallery.html#">Gallery </a></li>
+                                <li><a href="team.html#">Team</a></li>
+                                <li><a href="404.html#">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="blog.html#">Blog</a>
+                            <ul>
+                                <li><a href="blog.html#">Blog</a></li>
+                                <li><a href="single-blog.html#"> Single Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="causes.html#">Causes</a>
+                            <ul>
+                                <li><a href="causes.html#">Causes</a></li>
+                                <li><a href="single-causes.html#"> Single Causes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="event.html#">Event</a>
+                            <ul>
+                                <li><a href="event.html#">Event</a></li>
+                                <li><a href="single-event.html#"> Single Event</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            {{--<div class="signup">--}}
+                {{--<ul><li><a href="#"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>login</a></li>--}}
+                    {{--<li><a href="#"><span></span><i class="fa fa-user" aria-hidden="true"></i>signup</a></li></ul>--}}
+            {{--</div>--}}
+        </div>
+    </section>
+    <!--/Main-Menu-->
 </header>

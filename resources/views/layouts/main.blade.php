@@ -12,11 +12,13 @@
 
 </head>
 <body>
+    <div class="page-wrapper">
+        @include('layouts.loader')
+        @include('includes.topnav')
+        @yield('content')
+        @include('layouts.footer')
+    </div>
 
-    @include('layouts.loader')
-    @include('includes.topnav')
-    @yield('content')
-    @include('layouts.footer')
     @include('layouts.scripts.js')
 </body>
 </html>

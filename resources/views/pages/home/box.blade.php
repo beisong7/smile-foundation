@@ -1,45 +1,44 @@
-<section class="hiw-area">
-    <div class="container">
+<section class="welcome-area">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <div class="hiw-item">
-                    <div class="hiw-item-img-box hiw-bg1">
-                        <figure>
-                            <img src="{{ url('img/box/donate.jpg') }}" alt="">
-                            <h3 class="hiw-title">More charity better lives</h3>
-                            <div class="hiw-btn-box">
-                                <a href="#" class="theme-btn">read more</a>
-                            </div>
-                        </figure>
-                    </div><!-- end hiw-item-img-box -->
-                </div><!-- end hiw-item -->
-            </div><!-- end col -->
-            <div class="col">
-                <div class="hiw-item">
-                    <div class="hiw-item-img-box hiw-bg2">
-                        <figure>
-                            <img src="{{ url('img/box/medics.jpg') }}" alt="">
-                            <h3 class="hiw-title">How to become volunteer</h3>
-                            <div class="hiw-btn-box">
-                                <a href="#" class="theme-btn">read more</a>
-                            </div>
-                        </figure>
-                    </div><!-- end hiw-item-img-box -->
-                </div><!-- end hiw-item -->
-            </div><!-- end col -->
-            <div class="col">
-                <div class="hiw-item">
-                    <div class="hiw-item-img-box hiw-bg3">
-                        <figure>
-                            <img src="{{ url('img/box/edu.jpg') }}" alt="">
-                            <h3 class="hiw-title">Poor children education</h3>
-                            <div class="hiw-btn-box">
-                                <a href="#" class="theme-btn">read more</a>
-                            </div>
-                        </figure>
-                    </div><!-- end hiw-item-img-box -->
-                </div><!-- end hiw-item -->
-            </div><!-- end col -->
-        </div><!-- end row -->
-    </div><!-- end container -->
-</section><!-- end hiw-area -->
+            <div class="col-md-4 col-sm-4 col-xs-12 pd-0">
+                <!-- Start single-item -->
+                <div class="item" style="background: rgba(0, 0, 0, 0) url('{{ url('img/box/donate.jpg') }}') no-repeat scroll 0 0 / cover;">
+                    <div class="text">
+                        <h2 class="text-center">Give</h2>
+                        <p style="padding: 0; text-align: center">We can all be a giver</p>
+                        <p style="padding: 0; text-align: center">
+                        <a href="#" style="float: none; margin-left: auto">Donate Now</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- End single-item -->
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 pd-0">
+                <!-- Start single-item -->
+                <div class="item" style="background: rgba(0, 0, 0, 0) url('{{ url('img/box/edu.jpg') }}') no-repeat scroll 0 0 / cover;">
+                    <div class="text">
+                        <h2 class="text-center">Donate</h2>
+                        <p style="padding: 0; text-align: center">Donate for noble cause</p>
+                        <p style="padding: 0; text-align: center">
+                        <a href="#" style="float: none; margin-left: auto">Donate Now</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- End single-item -->
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 pd-0">
+                <!-- Start single-item -->
+                <div class="item" style="background: rgba(0, 0, 0, 0) url('{{ url('img/box/medics.jpg') }}') no-repeat scroll 0 0 / cover;">
+                    <div class="text">
+                        <h2 class="text-center">volunteer</h2>
+                        <p style="padding: 0; text-align: center">Be a part of something bigger</p>
+                        <p style="padding: 0; text-align: center">
+                            <a href="#" style="float: none; margin-left: auto">Join Now</a>
+                        </p>
+                    </div></div>
+                <!-- End single-item -->
+            </div>
+        </div>
+    </div>
+</section>

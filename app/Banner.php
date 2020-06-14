@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Banner extends Model
 {
-    protected $connection = 'mysqlLive';
+
+    protected $fillable = [
+
+    ];
+
 
     public function gallery(){
 

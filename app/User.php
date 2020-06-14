@@ -9,6 +9,8 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $connection = 'mother_site';
+
     /**
      * The attributes that are mass assignable.
      *

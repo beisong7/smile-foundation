@@ -1,9 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
-<link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/fontello.css') }}">
-<link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-<link rel="stylesheet" href="{{ asset('css/style.css') }}">
-<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+<link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ asset('css/style.css') }}" rel="stylesheet">
+<link href="{{ asset('css/revolution-slider.css') }}" rel="stylesheet">
+<link href="{{ asset('css/responsive.css') }}" rel="stylesheet">

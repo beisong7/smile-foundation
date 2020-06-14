@@ -25,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $banner = Banner::where('type', 'slider')->where('target', 'foundation')->take(3)->get();
+        $banner = Banner::get();
         $events = Program::orderBy('id','desc')->where('type', 'humanitarian')->take(3)->get();
 //        return $banner;
         return view('pages.home.index')

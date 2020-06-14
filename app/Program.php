@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 class Program extends Model
 {
 
-    protected $connection = 'mysqlLive';
+    protected $connection = 'mother_site';
 
     public function pic(){
         $url = 'https://smileplanetef.org/api/get/image/'.$this->gallery_id.'/token';

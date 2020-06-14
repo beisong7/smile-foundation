@@ -1,65 +1,38 @@
-<section class="blog-area">
+<section class="blog-seciton">
     <div class="container">
+        <div class="section-title text-center">
+            <h6>Learn more from our blog</h6>
+            <h2>latest <span>news</span></h2>
+        </div>
         <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <div class="section-heading blog-heading">
-                    <div class="section-icon">
-                        <img src="{{ url('images/section-icon.png') }}" alt="section-icon">
-                    </div>
-                    <h2 class="section__title">News and Events</h2>
-                    <p class="section__meta">updates</p>
-                </div><!-- end section-heading -->
-            </div><!-- end col-lg-12 -->
-        </div><!-- end row -->
-        <div class="row recent-post-wrap">
-            <div class="col-lg-6">
-                <?php $a = 0 ?>
-                @foreach($events as $event)
-                    @if($a===0)
-                            <div class="recent-item">
-                                <div class="recent__img">
-                                    <span class="meta__date-date">{{ date('j M, Y', strtotime($event->date)) }}</span>
-                                    <img src="{{ $event->pic() }}" alt="service-image">
-                                </div><!-- end recent__img -->
-                                <div class="news__content">
-                                    <h3 class="news__content-title"><a href="#">{{ $event->title }}</a></h3>
-                                    <ul class="news__content-list">
-                                        <li class="news__content-active__dot"><a href="#">Smile Planet Foundation</a></li>
-                                    </ul>
-                                    <p class="news__content-text">
-                                        {{ $event->shortInfo() }}
-                                    </p>
-                                    <a href="#" class="theme-btn">read more</a>
-                                </div><!-- end news__content -->
-                            </div><!-- end recent-item-->
-                    @endif
-                    <?php $a= 1; ?>
-                @endforeach
 
-            </div><!-- end col-lg-6 -->
-            <div class="col-lg-6">
-                <div class="third-recent-box">
-                    <ul class="third-recent-item">
+            @foreach($events as $event)
 
-
-                        @foreach($events as $event)
-                            <li>
-                                <div class="recent__img">
-                                    <a href="{{ $event->link() }}"><img src="{{ $event->pic() }}" alt="" style="width: 170px"></a>
-                                </div><!-- end recent__img -->
-                                <div class="recent__content">
-                                    <span>{{ date('j M, Y', strtotime($event->date)) }}</span>
-                                    <h4><a href="{{ $event->link() }}">{{ $event->title }} </a></h4>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <!-- Start single-item -->
+                    <div class="blog-item">
+                        <div class="img-holder">
+                            <figure><a href="#"><img src="{{ $event->pic() }}" alt="Images"></a></figure>
+                        </div>
+                        <div class="text">
+                            <h4><a href="#">{{ $event->title }}</a></h4>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <i class="fa fa-user" aria-hidden="true"></i> By <span>smilePlanet</span>
                                 </div>
-                            </li>
-                        @endforeach
+                                <div class="col-sm-6">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> On <span>{{ date('j M, y', strtotime($event->date)) }}</span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <p class="text-justify">{{ $event->shortInfo() }}</p>
+                            <a href="{{ $event->link() }}"class="dont-btn">Read more</a>
+                        </div>
+                    </div>
+                    <!-- End single-item -->
+                </div>
+            @endforeach
 
-
-
-
-                    </ul>
-                </div><!-- end third-recent-box -->
-            </div><!-- end col-lg-6 -->
-        </div><!-- end row -->
-    </div><!-- end container -->
-</section><!-- end blog-area -->
+        </div>
+    </div>
+</section>
