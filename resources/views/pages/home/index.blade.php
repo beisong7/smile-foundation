@@ -1,3 +1,6 @@
+<?php
+$navbar['home'] = 'current';
+?>
 @extends('layouts.main')
 
 @section('content')

@@ -38,77 +38,19 @@
                 </div>
                 <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
-                        <li class="current dropdown"><a href="index-2.html#">Home</a>
-                            <ul>
-                                <li><a href="index-2.html#">Home One</a></li>
-                                <li><a href="index-3.html#">Home Two</a></li>
-                                <li><a href="index-4.html#">Home Three</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html#">About</a></li>
-                        <li class="dropdown"><a href="#">Pages</a>
-                            <ul>
-                                <li><a href="gallery.html#">Gallery </a></li>
-                                <li><a href="team.html#">Team</a></li>
-                                <li><a href="404.html#">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="blog.html#">Blog</a>
-                            <ul>
-                                <li><a href="blog.html#">Blog</a></li>
-                                <li><a href="single-blog.html#"> Single Blog</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="causes.html#">Causes</a>
-                            <ul>
-                                <li><a href="causes.html#">Causes</a></li>
-                                <li><a href="single-causes.html#"> Single Causes</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="event.html#">Event</a>
-                            <ul>
-                                <li><a href="event.html#">Event</a></li>
-                                <li><a href="single-event.html#"> Single Event</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html#">Contact</a></li>
+                        <li class="{{ @$navbar['home'] }}"><a href="#">Home</a></li>
+                        <li class="{{ @$navbar['about'] }}"><a href="#">About</a></li>
+                        <li class="{{ @$navbar['cause'] }}"><a href="#">Causes</a></li>
+                        <li class="{{ @$navbar['events'] }}"><a href="#">Event</a></li>
+                        <li class="{{ @$navbar['contact'] }}"><a href="#">Contact</a></li>
                     </ul>
                     <ul class="mobile-menu clearfix">
 
-                        <li class="current dropdown"><a href="index-2.html#">Home</a>
-                            <ul>
-                                <li><a href="index-2.html#">Home One</a></li>
-                                <li><a href="index-3.html#">Home Two</a></li>
-                                <li><a href="index-4.html#">Home Three</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html#">About</a></li>
-                        <li class="dropdown"><a href="#">Pages</a>
-                            <ul>
-                                <li><a href="gallery.html#">Gallery </a></li>
-                                <li><a href="team.html#">Team</a></li>
-                                <li><a href="404.html#">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="blog.html#">Blog</a>
-                            <ul>
-                                <li><a href="blog.html#">Blog</a></li>
-                                <li><a href="single-blog.html#"> Single Blog</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="causes.html#">Causes</a>
-                            <ul>
-                                <li><a href="causes.html#">Causes</a></li>
-                                <li><a href="single-causes.html#"> Single Causes</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="event.html#">Event</a>
-                            <ul>
-                                <li><a href="event.html#">Event</a></li>
-                                <li><a href="single-event.html#"> Single Event</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html#">Contact</a></li>
+                        <li class="{{ @$navbar['home'] }}"><a href="#">Home</a></li>
+                        <li class="{{ @$navbar['about'] }}"><a href="#">About</a></li>
+                        <li class="{{ @$navbar['cause'] }}"><a href="#">Causes</a></li>
+                        <li class="{{ @$navbar['events'] }}"><a href="#">Event</a></li>
+                        <li class="{{ @$navbar['contact'] }}"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -135,77 +77,19 @@
                 </div>
                 <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
-                        <li class="current dropdown"><a href="index-2.html#">Home</a>
-                            <ul>
-                                <li><a href="index-2.html#">Home One</a></li>
-                                <li><a href="index-3.html#">Home Two</a></li>
-                                <li><a href="index-4.html#">Home Three</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html#">About</a></li>
-                        <li class="dropdown"><a href="#">Pages</a>
-                            <ul>
-                                <li><a href="gallery.html#">Gallery </a></li>
-                                <li><a href="team.html#">Team</a></li>
-                                <li><a href="404.html#">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="blog.html#">Blog</a>
-                            <ul>
-                                <li><a href="blog.html#">Blog</a></li>
-                                <li><a href="single-blog.html#"> Single Blog</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="causes.html#">Causes</a>
-                            <ul>
-                                <li><a href="causes.html#">Causes</a></li>
-                                <li><a href="single-causes.html#"> Single Causes</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="event.html#">Event</a>
-                            <ul>
-                                <li><a href="event.html#">Event</a></li>
-                                <li><a href="single-event.html#"> Single Event</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html#">Contact</a></li>
+                        <li class="{{ @$navbar['home'] }}"><a href="#">Home</a></li>
+                        <li class="{{ @$navbar['about'] }}"><a href="#">About</a></li>
+                        <li class="{{ @$navbar['cause'] }}"><a href="#">Causes</a></li>
+                        <li class="{{ @$navbar['events'] }}"><a href="#">Event</a></li>
+                        <li class="{{ @$navbar['contact'] }}"><a href="#">Contact</a></li>
                     </ul>
                     <ul class="mobile-menu clearfix">
 
-                        <li class="current dropdown"><a href="index-2.html#">Home</a>
-                            <ul>
-                                <li><a href="index-2.html#">Home One</a></li>
-                                <li><a href="index-3.html#">Home Two</a></li>
-                                <li><a href="index-4.html#">Home Three</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="about.html#">About</a></li>
-                        <li class="dropdown"><a href="#">Pages</a>
-                            <ul>
-                                <li><a href="gallery.html#">Gallery </a></li>
-                                <li><a href="team.html#">Team</a></li>
-                                <li><a href="404.html#">404</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="blog.html#">Blog</a>
-                            <ul>
-                                <li><a href="blog.html#">Blog</a></li>
-                                <li><a href="single-blog.html#"> Single Blog</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="causes.html#">Causes</a>
-                            <ul>
-                                <li><a href="causes.html#">Causes</a></li>
-                                <li><a href="single-causes.html#"> Single Causes</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="event.html#">Event</a>
-                            <ul>
-                                <li><a href="event.html#">Event</a></li>
-                                <li><a href="single-event.html#"> Single Event</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="contact.html#">Contact</a></li>
+                        <li class="{{ @$navbar['home'] }}"><a href="#">Home</a></li>
+                        <li class="{{ @$navbar['about'] }}"><a href="#">About</a></li>
+                        <li class="{{ @$navbar['cause'] }}"><a href="#">Causes</a></li>
+                        <li class="{{ @$navbar['events'] }}"><a href="#">Event</a></li>
+                        <li class="{{ @$navbar['contact'] }}"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>

@@ -17,7 +17,7 @@
                     </div>
                     <div class="text">
                         <div class="" style="padding: 20px">
-                            <h4 style="color: orangered"><b>SHE CAN FLY</b></h4>
+                            <h4 style="color: #EC1E8D"><b>SHE CAN FLY</b></h4>
                             <p>A female child is endowed with enormous potentials and given the opportunity these abilities are capable of expression. She is strong, hence deserving of motivation and support.</p>
                             <a href="#">Donate now</a>
                         </div>
@@ -38,7 +38,7 @@
                     </div>
                     <div class="text">
                         <div class="" style="padding: 20px">
-                            <h4 style="color: orangered"><b>KNOCK AND GIVE</b></h4>
+                            <h4 style="color: #EC1E8D"><b>KNOCK AND GIVE</b></h4>
                             <p>Facing COVID 19 with all hands on deck has never been more fulfilling. Supporting families in our communities and ensuring that everyone has a meal each day. Join us Now!</p>
                             <a href="#">Donate now</a>
                         </div>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="text">
                         <div class="" style="padding: 20px">
-                            <h4 style="color: orangered"><b>EVERY CHILD AT SCHOOL</b></h4>
+                            <h4 style="color: #EC1E8D`"><b>EVERY CHILD AT SCHOOL</b></h4>
                             <p>The gifts from God should be handled with care and what better means to express this than to ensure all our children are at school with their peers.</p>
                             <a href="#">Donate now</a>
                         </div>

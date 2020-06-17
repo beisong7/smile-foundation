@@ -6,7 +6,7 @@
   position: relative;
 }
 .main-menu .navigation > li.current {
-  border-bottom: 6px solid #f55c23;
+  border-bottom: 6px solid #EC1E8D;
   margin-right: 10px;
 }
  .main-menu .navigation {
@@ -75,7 +75,7 @@
   padding-top: 50px!important;
 }
   .slider-bar .counter-column span {
-  color: #f55c23;
+  color: #EC1E8D;
   font-size: 26px;
  line-height:50px!important
 }
@@ -106,7 +106,7 @@
   margin-right: 10px;
 }
 .main-menu .navigation > li.current {
-  border-bottom: 6px solid #f55c23;
+  border-bottom: 6px solid #EC1E8D;
   margin-right: 10;
 }
 }
@@ -228,7 +228,7 @@
   padding-top: 50px!important;
 }
   .slider-bar .counter-column span {
-  color: #f55c23;
+  color: #EC1E8D;
   font-size: 26px;
  line-height:50px!important
 }
@@ -364,7 +364,7 @@
 }
 .blog-seciton.blog-pag .blog-item .item-text.event-item .tags .btn-2 {
   backface-visibility: hidden;
-  background: none repeat scroll 0 0 #f55c23;
+  background: none repeat scroll 0 0 #EC1E8D;
   border: 2px solid #cccccc;
   border-radius: 3px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -395,7 +395,7 @@
   margin-top: 30px;
 }
 .main-menu .navigation > li > ul {
-  background: none repeat scroll 0 0 #F55C23;
+  background: none repeat scroll 0 0 #EC1E8D;
   left: 0;
   opacity: 0;
   padding: 0;
@@ -456,7 +456,7 @@
   font-size: 20px;
 }
 .main-menu .navigation > li.current {
-  border-bottom: 6px solid #f55c23;
+  border-bottom: 6px solid #EC1E8D;
   margin-right: 0px;
 }
 .main-menu .navigation li{
@@ -680,7 +680,7 @@
   padding-left: 10px;
 }
 .blog-seciton.blog-pag .blog-item .item-text .date {
-  background: none repeat scroll 0 0 #f55c23;
+  background: none repeat scroll 0 0 #EC1E8D;
   border-radius: 3px;
   float: left;
   height: 60px;
@@ -825,7 +825,7 @@
   }  
 
   .main-menu .navbar-toggle .icon-bar {
-    background: #f55c23;
+    background: #EC1E8D;
     width: 30px;
   }  
 /*=================================menu=======================*/  
@@ -855,12 +855,12 @@
 .mobile-menu,
 .mobile-menu > li > ul,
 .mobile-menu > li > ul > li > ul{
-  background: #f55c23;
+  background: #EC1E8D;
 }
 .bounce-in-header .mobile-menu,
 .mobile-menu > li > ul,
 .mobile-menu > li > ul > li > ul{
-  background: #f55c23;
+  background: #EC1E8D;
 }
 
 .mobile-menu > li > ul,
