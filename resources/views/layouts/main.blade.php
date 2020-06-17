@@ -1,3 +1,6 @@
+<?php
+$ver = "?v=1.0.1";
+?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>

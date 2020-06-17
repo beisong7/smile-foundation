@@ -17,5 +17,5 @@
 
 
 
-<script src="{{ asset('js/custom.js') }}"></script>
+<script src="{{ asset('js/custom.js'.@$ver) }}"></script>
 {{--<script src="{{ asset('js/main.js') }}"></script>--}}
