@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="tweet-wrap" style="max-height: 300px; overflow-y: scroll;">
-                        <a class="twitter-timeline" href="https://twitter.com/SPlanetConsults?ref_src=twsrc%5Etfw">Tweets by SPlanetConsults</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <a class="twitter-timeline" href="https://twitter.com/SmilePlanet_C?ref_src=twsrc%5Etfw">Tweets by SmilePlanet_C</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                     {{--<div class="gallery-widget">--}}
                         {{--<h2>Instagram Photos</h2>--}}
