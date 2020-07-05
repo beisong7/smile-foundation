@@ -32,4 +32,8 @@ class User extends Authenticatable
     public function b(){
 
     }
+
+    public function image(){
+        return url('img/user.png');
+    }
 }

@@ -32,4 +32,8 @@ class HomeController extends Controller
             ->with('events', $events)
             ->with('banners', $banner);
     }
+
+    public function adminLogin(){
+        return view('admin.pages.auth.login');
+    }
 }

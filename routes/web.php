@@ -15,3 +15,15 @@
 //Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/administrator/gate', 'HomeController@adminLogin')->name('admin.login');
+Route::post('/administrator/authenticate', 'AuthController@authenticate')->name('admin.auth');
+
+
+
+
+Route::group(['middleware'=>'admin'], function () {
+    Route::prefix('admin')->group(function () {
+        Route::get('dashboard', 'ConsoleController@dashboard')->name('dashboard');
+        Route::get('admin/session/logout', 'AuthController@logout')->name('admin.logout');
+    });
+});
