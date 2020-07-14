@@ -15,6 +15,7 @@ class CreateProjectsTable extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
+            $table->uuid('uuid')->nullable();
             $table->longText('title')->nullable(); //
             $table->text('intro')->nullable(); //
             $table->longText('info')->nullable(); //
@@ -25,6 +26,7 @@ class CreateProjectsTable extends Migration
             $table->float('target', 12, 2)->nullable(); //number of times page visited
             $table->float('achieved', 12, 2)->nullable(); //number of times page visited
             $table->string('tags')->nullable(); //words to link similar projects
+            $table->boolean('active')->nullable(); //
             $table->timestamps();
         });
     }

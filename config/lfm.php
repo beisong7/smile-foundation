@@ -33,7 +33,8 @@ return [
     // Then you can rewrite userField function in App\Handler\ConfigHander class
     // And set 'user_field' to App\Handler\ConfigHander::class
     // Ex: The private folder of user will be named as the user id.
-    'user_field' => UniSharp\LaravelFilemanager\Handlers\ConfigHandler::class,
+//    'user_field' => UniSharp\LaravelFilemanager\Handlers\ConfigHandler::class,
+    'user_field' => \App\Services\file_manager\ConfigHandler::class,
 
     /*
     |--------------------------------------------------------------------------
@@ -45,10 +46,9 @@ return [
     // You should create routes to serve images if it is not set to public.
     'base_directory' => 'public',
 
-    'images_folder_name' => 'photos',
+    'images_folder_name' => 'data/uploads',
     'files_folder_name'  => 'files',
-
-    'shared_folder_name' => 'shares',
+    'shared_folder_name' => '../shares',
     'thumb_folder_name'  => 'thumbs',
 
     /*

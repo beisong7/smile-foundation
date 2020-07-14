@@ -8,7 +8,7 @@
                         <h2 class="text-center ">Give</h2>
                         <p style="padding: 0; text-align: center">We can all be a giver</p>
                         <p style="padding: 0; text-align: center">
-                        <a href="#" style="float: none; margin-left: auto">Donate Now</a>
+                        <a href="#" style="float: none; margin-left: auto">Learn More</a>
                         </p>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
                         <h2 class="text-center ">Donate</h2>
                         <p style="padding: 0; text-align: center">Donate for noble cause</p>
                         <p style="padding: 0; text-align: center">
-                        <a href="#" style="float: none; margin-left: auto">Donate Now</a>
+                        <a href="#" style="float: none; margin-left: auto">Learn More</a>
                         </p>
                     </div>
                 </div>

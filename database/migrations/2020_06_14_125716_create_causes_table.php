@@ -15,14 +15,19 @@ class CreateCausesTable extends Migration
     {
         Schema::create('causes', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title')->nullable(); //
-            $table->uuid('user_id')->nullable(); //
-            $table->string('author')->nullable(); //
+            $table->uuid('uuid')->nullable(); //unique ID
+            $table->string('title')->nullable(); // Title
+            $table->string('small_title')->nullable(); // Title
+            $table->uuid('user_id')->nullable(); //person who created it
             $table->string('location')->nullable(); //
-            $table->text('image')->nullable(); //
-            $table->integer('hits')->nullable(); //number of times page visited
+            $table->integer('hits')->nullable(); // number of times page visited
+            $table->text('intro')->nullable(); //
             $table->longText('info')->nullable(); //
-            $table->string('tags')->nullable(); //words to link similar cause
+            $table->string('goal')->nullable(); // words to link similar cause
+            $table->string('tags')->nullable(); // words to link similar cause
+            $table->string('featured')->nullable();
+            $table->string('youtube')->nullable();
+            $table->boolean('active')->nullable(); //
             $table->timestamps();
         });
     }

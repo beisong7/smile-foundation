@@ -38,19 +38,10 @@
                 </div>
                 <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
-                        <li class="{{ @$navbar['home'] }}"><a href="#">Home</a></li>
-                        <li class="{{ @$navbar['about'] }}"><a href="#">About</a></li>
-                        <li class="{{ @$navbar['cause'] }}"><a href="#">Causes</a></li>
-                        <li class="{{ @$navbar['events'] }}"><a href="#">Event</a></li>
-                        <li class="{{ @$navbar['contact'] }}"><a href="#">Contact</a></li>
+                        @include('includes.navitem')
                     </ul>
                     <ul class="mobile-menu clearfix">
-
-                        <li class="{{ @$navbar['home'] }}"><a href="#">Home</a></li>
-                        <li class="{{ @$navbar['about'] }}"><a href="#">About</a></li>
-                        <li class="{{ @$navbar['cause'] }}"><a href="#">Causes</a></li>
-                        <li class="{{ @$navbar['events'] }}"><a href="#">Event</a></li>
-                        <li class="{{ @$navbar['contact'] }}"><a href="#">Contact</a></li>
+                        @include('includes.navitem')
                     </ul>
                 </div>
             </nav>
@@ -77,19 +68,11 @@
                 </div>
                 <div class="navbar-collapse collapse clearfix">
                     <ul class="navigation clearfix">
-                        <li class="{{ @$navbar['home'] }}"><a href="#">Home</a></li>
-                        <li class="{{ @$navbar['about'] }}"><a href="#">About</a></li>
-                        <li class="{{ @$navbar['cause'] }}"><a href="#">Causes</a></li>
-                        <li class="{{ @$navbar['events'] }}"><a href="#">Event</a></li>
-                        <li class="{{ @$navbar['contact'] }}"><a href="#">Contact</a></li>
+                        @include('includes.navitem')
                     </ul>
                     <ul class="mobile-menu clearfix">
 
-                        <li class="{{ @$navbar['home'] }}"><a href="#">Home</a></li>
-                        <li class="{{ @$navbar['about'] }}"><a href="#">About</a></li>
-                        <li class="{{ @$navbar['cause'] }}"><a href="#">Causes</a></li>
-                        <li class="{{ @$navbar['events'] }}"><a href="#">Event</a></li>
-                        <li class="{{ @$navbar['contact'] }}"><a href="#">Contact</a></li>
+                        @include('includes.navitem')
                     </ul>
                 </div>
             </nav>

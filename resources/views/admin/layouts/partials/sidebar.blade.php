@@ -73,8 +73,8 @@
         <div id="ourCause" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Our Cause</h6>
-                <a class="collapse-item" href="#">All Cause</a>
-                <a class="collapse-item" href="#">Inactive Admin</a>
+                <a class="collapse-item" href="{{ route('cause.index') }}">All Cause</a>
+                <a class="collapse-item" href="#">Inactive Cause</a>
             </div>
         </div>
     </li>

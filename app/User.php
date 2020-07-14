@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\ImageUpload;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -35,5 +36,9 @@ class User extends Authenticatable
 
     public function image(){
         return url('img/user.png');
+    }
+
+    public function getUpload($uuid){
+        return ImageUpload::where('model_id', $uuid)->get();
     }
 }
