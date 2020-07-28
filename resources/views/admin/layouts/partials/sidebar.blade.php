@@ -53,7 +53,7 @@
     <li class="nav-item {{ @$sidenav['donors'] }}">
         <a class="nav-link" href="#">
             <i class="fas fa-fw fa-user-secret"></i>
-            <span>Donor</span></a>
+            <span>Sponsors</span></a>
     </li>
 
     <!-- Divider -->
@@ -74,7 +74,22 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Our Cause</h6>
                 <a class="collapse-item" href="{{ route('cause.index') }}">All Cause</a>
-                <a class="collapse-item" href="#">Inactive Cause</a>
+                <a class="collapse-item" href="{{ route('cause.index', ['type'=>'inactive']) }}">Inactive Cause</a>
+            </div>
+        </div>
+    </li>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item {{ @$sidenav['events'] }}">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#ourEvent" aria-expanded="true" aria-controls="ourEvent">
+            <i class="fas fa-fw fa-calendar"></i>
+            <span>Events</span>
+        </a>
+        <div id="ourEvent" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Events</h6>
+                <a class="collapse-item" href="#">All</a>
+                <a class="collapse-item" href="#">Inactive / Old</a>
             </div>
         </div>
     </li>
