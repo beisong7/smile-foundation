@@ -63,3 +63,19 @@ Route::get('event/view/{title}', 'HomeController@viewEvent')->name('view.event')
 
 Route::get('about', 'HomeController@about')->name('about');
 Route::get('contact', 'HomeController@contact')->name('contact');
+
+
+Route::get('about-test', function (){
+    return \App\Models\Volunteer::orderBy('id', 'desc')->select([
+        'id',
+        'fname',
+        'lname',
+        'formkey',
+        'title',
+        'fbook',
+        'igram',
+        'tweeta',
+        'image'
+    ])->take(7)->get();
+});
+
