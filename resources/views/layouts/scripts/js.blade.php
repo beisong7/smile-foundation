@@ -19,3 +19,10 @@
 
 <script src="{{ asset('js/custom.js'.@$ver) }}"></script>
 {{--<script src="{{ asset('js/main.js') }}"></script>--}}
+
+<script>
+    setTimeout(function () {
+        $('.preloader').remove()
+        console.log('preloader removed')
+    }, 15000)
+</script>

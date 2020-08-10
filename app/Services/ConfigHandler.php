@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\file_manager;
+namespace App\Services;
 
 class ConfigHandler
 {

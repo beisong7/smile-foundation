@@ -15,7 +15,6 @@
 //Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('causes', 'HomeController@causes')->name('causes');
 Route::get('/administrator/gate', 'HomeController@adminLogin')->name('admin.login');
 Route::post('/administrator/authenticate', 'AuthController@authenticate')->name('admin.auth');
 
@@ -46,5 +45,21 @@ Route::group(['middleware'=>'admin'], function () {
         Route::get('manage/cause/toggle/{uuid}', 'CauseController@toggle')->name('cause.toggle');
         //=============================================
 
+
+        //=============================================
+
+        //=============================================
+
     });
 });
+
+
+Route::get('causes', 'HomeController@causes')->name('causes');
+Route::get('cause/preview/{uuid}', 'HomeController@previewCause')->name('read.cause');
+Route::get('cause/with-tag/{name}', 'HomeController@previewTagCause')->name('cause.tag');
+
+Route::get('events', 'HomeController@listEvents')->name('events');
+Route::get('event/view/{title}', 'HomeController@viewEvent')->name('view.event');
+
+Route::get('about', 'HomeController@about')->name('about');
+Route::get('contact', 'HomeController@contact')->name('contact');

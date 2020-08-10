@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\Banner;
 use Illuminate\Database\Eloquent\Model;
 
 class Gallery extends Model

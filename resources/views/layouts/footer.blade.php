@@ -4,11 +4,13 @@
             <div class="footer-item">
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="widget">
-                        <h2>Information</h2>
-                        <p>Lorem ipsum dolor sit amet, consecttur adipiscing egestas rhoncus Praesent Nunc pretium est placerat congue</p>
-                        <h5><i class="fa fa-map-marker" aria-hidden="true"></i>8, Haji Mohshin road, Khulna</h5>
-                        <h5><i class="fa fa-envelope-o" aria-hidden="true"></i>support@user.com</h5>
-                        <h5><i class="fa fa-phone" aria-hidden="true"></i>1234 - 5678 - 9101</h5>
+                        <h2>Reach Us</h2>
+                        <p>
+                            Suite BA 11, Apo Spark Mall, Opposite Living Faith Church, Durumi II by Area 3 Junction, Abuja.
+                        </p>
+                        <h5><i class="fa fa-map-marker" aria-hidden="true"></i>Durumi II by Area 3 Junction, Abuja.</h5>
+                        <h5><i class="fa fa-envelope-o" aria-hidden="true"></i>mails@smileplanetef.org</h5>
+                        <h5><i class="fa fa-phone" aria-hidden="true"></i>+234 703 324 1426</h5>
                     </div>
 
                 </div>

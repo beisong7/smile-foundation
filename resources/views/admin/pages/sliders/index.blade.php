@@ -9,8 +9,8 @@
     <!-- Begin Page Content -->
     <div class="container-fluid">
 
-        @include('admin.layouts.breadcrumb')
-        @include('layouts.notice')
+        @include('admin.layouts.partials.breadcrumb')
+        @include('layouts.notify')
 
         <!-- Content Row -->
         <div class="row">
@@ -37,13 +37,13 @@
                                         <td>#</td>
                                         <td>
                                             <div class="" style="max-width: 100px">
-                                                <img src="{{ $slider->image }}" alt="slider-image" style="width: 100%">
+                                                <img src="{{ $slider->photo }}" alt="slider-image" style="width: 100%">
                                             </div>
                                         </td>
                                         <td>{{ $slider->created_at->diffForHumans() }}</td>
                                         <td>
-                                            <a href="{{ route('slider.show', $slider->unid) }}" class="btn btn-dark btn-sm">Manage</a>
-                                            <a href="{{ route('slider.toggle', $slider->unid) }}" class="btn btn-outline-danger btn-sm">{{ $slider->active?'Remove':'Activate' }}</a>
+                                            <a href="{{ route('slider.show', $slider->uuid) }}" class="btn btn-dark btn-sm">Manage</a>
+                                            <a href="{{ route('slider.toggle', $slider->uuid) }}" class="btn btn-outline-danger btn-sm">{{ $slider->active?'Remove':'Activate' }}</a>
                                         </td>
                                     </tr>
                                 @endforeach

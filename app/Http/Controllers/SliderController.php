@@ -3,82 +3,118 @@
 namespace App\Http\Controllers;
 
 use App\Models\ImageUpload;
-use App\Models\Banner;
+use App\Models\Slider;
+use App\Services\ImageUploader;
 use App\Traits\General\Utility;
 use Illuminate\Http\Request;
 
 class SliderController extends Controller
 {
     use Utility;
+    private $imageFactory;
+
+    public function __construct(ImageUploader $uploader)
+    {
+        $this->imageFactory = $uploader;
+    }
+
     public function sliders(Request $request){
         $type = $request->input('type');
         $slider = [];
         if($type==='active'){
-            $slider = Banner::where('active', true)->paginate(15);
+            $slider = Slider::where('active', true)->paginate(15);
         }elseif ($type==='inactive'){
-            $slider = Banner::where('active', '!=', true)->paginate(15);
+            $slider = Slider::where('active', '!=', true)->paginate(15);
         }else{
-            $slider = Banner::where('active', true)->paginate(15);
+            $slider = Slider::where('active', true)->paginate(15);
         }
 
-        return view('admin.pages.slider.index')->with('sliders', $slider);
+//        return $slider;
+
+        return view('admin.pages.sliders.index')->with('sliders', $slider);
     }
 
     public function create(){
-        $unid = $this->getId('SLD', 35);
-        return view('admin.pages.slider.create')->with(['unid'=>$unid]);
+        $uuid = $this->generateId('SLD', 35);
+        return view('admin.pages.sliders.create')->with(['uuid'=>$uuid]);
     }
 
     public function store(Request $request){
-        $slider = new Banner();
-        $mainText = $request->input('main_text');
+
+        $mainText = $request->input('main_title');
+        $image = "";
         if(empty($mainText)){
             return back()->withErrors(['Required Fields Missing'])->withInput($request->input());
         }
-        $slider->main_text = $mainText;
-        $slider->more_text = $request->input('more_text');
-        $slider->button = $request->input('button')==='yes'?true:false;
-        $slider->button_url = $request->input('button_url');
-        $slider->button_text = $request->input('button_text');
-        $slider->unid = $request->input('unid');
-        $slider->active = false;
-        $slider->save();
 
-        return redirect()->route('slider.index')->withMessage('New Slider Created, Review and activate');
+        $uploadResponse = $this->imageFactory->upload($request, 'photo');
+
+        if($uploadResponse[0]){
+            $slider = new Slider();
+            $slider->uuid = $this->createUuid('sl', 24);
+            $slider->main_title = $mainText;
+            $slider->image = $uploadResponse[1];
+            $slider->title = $request->input('title');
+            $slider->sub_title = $request->input('sub_title');
+            $slider->donate = $request->input('donate')==='yes'?true:false;
+            $slider->menu = $request->input('menu')==='yes'?true:false;
+            $slider->active = true;
+            $slider->save();
+            return redirect()->route('slider.index')->withMessage('New Slider added');
+        }else{
+            return back()->withErrors([$uploadResponse[1]])->withInput($request->input());
+        }
+
     }
 
-    public function update(Request $request, $unid){
-        $slider = Banner::where('unid', $unid)->first();
+    public function update(Request $request, $uuid){
+
+        $slider = Slider::where('uuid', $uuid)->first();
         if(!empty($slider)){
-            $mainText = $request->input('main_text');
+
+            $mainText = $request->input('main_title');
             if(empty($mainText)){
                 return back()->withErrors(['Required Fields Missing'])->withInput($request->input());
             }
-            $slider->main_text = $mainText;
-            $slider->more_text = $request->input('more_text');
-            $slider->button = $request->input('button')==='yes'?true:false;
-            $slider->button_url = $request->input('button_url');
-            $slider->button_text = $request->input('button_text');
+
+            $uploadResponse = $this->imageFactory->upload($request, 'photo');
+
+            if($uploadResponse[0]){
+                //unlink old file
+                try{
+                    unlink($slider->image);
+                }catch (\Exception $e){
+
+                }
+
+                $slider->image = $uploadResponse[1];
+            }
+            $slider->main_title = $mainText;
+            $slider->title = $request->input('title');
+            $slider->sub_title = $request->input('sub_title');
+            $slider->donate = $request->input('donate')==='yes'?true:false;
+            $slider->menu = $request->input('menu')==='yes'?true:false;
             $slider->update();
 
             return back()->withMessage('Slider Updated');
         }
+
         return redirect()->route('slider.index')->withErrors(['Resource not found']);
 
     }
 
-    public function show($unid){
-        $slider = Banner::where('unid', $unid)->first();
+    public function show($uuid){
+        $slider = Slider::where('uuid', $uuid)->first();
         if(!empty($slider)){
 
-            return view('admin.pages.slider.edit')->with(['slider'=>$slider]);
+            return view('admin.pages.sliders.edit')->with(['slider'=>$slider]);
         }
 
         return back()->withErrors(['Resource not found']);
     }
 
-    public function toggle($unid){
-        $slider = Banner::where('unid', $unid)->first();
+    public function toggle($uuid){
+        $slider = Slider::where('uuid', $uuid)->first();
         $msg = "";
         if(!empty($slider)){
 
@@ -108,7 +144,7 @@ class SliderController extends Controller
             $image->move(public_path($dir),$imageName);
             $image = new ImageUpload();
             $image->url = $dir."/".$imageName;
-            $image->unid = $this->getId("ImG", 25);
+            $image->uuid = $this->getId("ImG", 25);
             $image->model_id = $model_id;
             $image->time = time();
             $image->name = $imageName;
@@ -146,9 +182,9 @@ class SliderController extends Controller
 
     }
 
-    public function popSingleImage(Request $request, $unid) {
+    public function popSingleImage(Request $request, $uuid) {
         $name = $request->input('filename');
-        $imageUploaded = ImageUpload::where('unid', $unid)->first();
+        $imageUploaded = ImageUpload::where('uuid', $uuid)->first();
         if(!empty($imageUploaded)){
             $path = $imageUploaded->url;
             if (file_exists($path)) {

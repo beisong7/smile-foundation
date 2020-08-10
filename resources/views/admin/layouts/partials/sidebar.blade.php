@@ -39,7 +39,7 @@
     </li>
 
     <li class="nav-item {{ @$sidenav['slider'] }}">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('slider.index') }}">
             <i class="fas fa-fw fa-layer-group"></i>
             <span>Sliders</span></a>
     </li>
