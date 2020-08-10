@@ -164,8 +164,8 @@ $title = "Cause / New";
 
     <script type="text/javascript">
 
-        let minImageWidth = 500;
-        let minImageHeight = 200;
+        let minImageWidth = 100;
+        let minImageHeight = 80;
 
         let md = new Dropzone("#dropzone", {
             url: '{{ route('uploadImage', !empty($uuid)?$uuid:old('unid')) }}',

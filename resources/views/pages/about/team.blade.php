@@ -25,7 +25,7 @@
                     <!-- End overlay -->
                 </div>
                 <div class="text">
-                    <h5><a href="#">{{ $volunteer['fname'] . " "  . $volunteer['lname']}}</a></h5>
+                    <h4 style="font-size: 14px"><a href="#">{{ $volunteer['fname'] . " "  . $volunteer['lname']}}</a></h4>
                     <p>volunteer</p>
                 </div>
             </div>
