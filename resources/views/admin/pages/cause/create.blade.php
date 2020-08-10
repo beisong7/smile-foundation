@@ -117,7 +117,7 @@ $title = "Cause / New";
                                 <label for="name" class="col-md-2 col-form-label text-md-right">Youtube</label>
 
                                 <div class="col-md-10 ">
-                                    <input id="" type="text" class="form-control" name="youtube" placeholder="Youtube Video for Cause" value="{{ $cause->youtube }}" autocomplete="off" />
+                                    <input id="" type="text" class="form-control" name="youtube" placeholder="Youtube Video for Cause" value="{{ old('youtube') }}" autocomplete="off" />
                                 </div>
                             </div>
 
