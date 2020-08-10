@@ -4,7 +4,7 @@
             <!-- Start single-item -->
             <div class="single-item wow fadeInUp">
                 <div class="img-holder" style="">
-                    <figure style="height: 230px; overflow: hidden">
+                    <figure style="height: 240px; overflow: hidden">
                         <a href="#"><img src="{{ url('https://smileplanetef.org/public/uploads/'.$volunteer['image']) }}" alt="Images"></a></figure>
                     <!-- Start overlay -->
                     <div class="overlay">
@@ -25,7 +25,7 @@
                     <!-- End overlay -->
                 </div>
                 <div class="text">
-                    <h4><a href="#">{{ $volunteer['fname'] . " "  . $volunteer['lname']}}</a></h4>
+                    <h5><a href="#">{{ $volunteer['fname'] . " "  . $volunteer['lname']}}</a></h5>
                     <p>volunteer</p>
                 </div>
             </div>
