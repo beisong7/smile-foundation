@@ -114,7 +114,7 @@ $navbar['about'] = 'current';
                 <p>Meet our volunteers...</p>
             </div>
             <div class="row">
-                {{--@include('pages.about.team')--}}
+                @include('pages.about.team')
             </div>
         </div>
     </section>
